@@ -1,24 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<link rel="stylesheet" href="/25/10/classwork 2/styles.css">
+  <style>
+    .cellcontainer {
+      padding: 20px;
+      width: fit-content;
+    }
 
-<body class="index-page">
+    .cellcontainer p {
+      line-height: 1.5;
+    }
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container position-relative d-flex align-items-center justify-content-between">
+    .gallery-container2 {
+      display: flex;
+      flex-direction: column; /* Aligns items in a single column */
+      width: 100%; /* Adjusts the container to full width */
+      max-width: 300px; /* Adjusts the maximum width */
+      margin: 0 auto;
+      gap: 10px; /* Adds space between images */
+    }
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-         <h1>
-        <img src="/25/10/classwork 2/diana-kuleniuk-oIR-PrUuFas-unsplash.jpg"  width="50px" alt="a coconut" >
-        coconut
-      </h1>
-      </a>
-
+    /* Styling each image */
+    .gallery-container2 img {
+      width: 100%; /* Makes each image fit the container width */
+      height: auto;
+      border-radius: 8px; /* Adds rounded corners */
+    }
+  </style>
+  <body>
+    <div class="main-container">
+      <header class="header2">
+        <h1>Coconut Blog</h1>
+      </header>
+      <div class="container">
+        <div class="cell1">
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="diana-kuleniuk-oIR-PrUuFas-unsplash.jpg"
+                width="100%"
+                height="100%"
+              />
+            </div>
+            <ul class="social-media"></ul>
+            <div class="card-info">
+              <p class="title">Name</p>
+              <p class="subtitle">David Ogunmola</p>
+            </div>
+          </div>
+        </div>
+        <div class="cell2">
+          <div class="cellcontainer"><h1>About Me</h1></div>
+        </div>
+        <div class="cell3">
+          <div class="cellcontainer">
+            <div class="gallery-container2">
+              <img src="Unknown.jpg" alt="Image 1" />
+              <img src="Unknown-3.jpg" alt="Image 3" />
+              <img
+                src="When your cat is secretly a zen master.jpg"
+                alt="Image 4"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="cell4">
+          <div class="cellcontainer">
+            <p>
+              I’m David Ogunmola, a first-class Computer Engineering student at
+              Covenant University, passionate about advancing my skills in
+              programming, data analysis, and machine learning. My journey in
+              tech has been fueled by curiosity and a drive to excel, leading me
+              to develop a solid foundation in backend development, database
+              management, and automation, with a growing interest in machine
+              learning and 3D neural rendering.
+            </p>
+            <p>
+              I’ve worked on projects that span a range of technologies,
+              including asynchronous web applications, user authentication, and
+              secure data storage. I’m proficient with languages and frameworks
+              like Node.js, PHP, and MySQL, and I’ve gained a strong
+              understanding of the instruction execution cycle, which has given
+              me a deeper perspective on how low-level processes contribute to
+              efficient software systems.
+            </p>
+            <p>
+              I’m especially interested in applying what I’ve learned to the
+              fields of robotics and AI. I enjoy exploring new ways to optimize
+              and automate systems, and I’m always looking for opportunities to
+              grow through internships and collaborative projects. As I advance,
+              I’m excited to contribute my skills to projects with real-world
+              impact, and I’m eager to make a mark in areas where tech
+              innovation is critical.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
